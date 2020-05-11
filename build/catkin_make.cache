@@ -1,0 +1,2 @@
+pub_msg:sub_msg:value_msg
+-DCATKIN_DEVEL_PREFIX=/home/tm/child/devel -DCMAKE_INSTALL_PREFIX=/home/tm/child/install -G Unix Makefiles
