@@ -43,33 +43,132 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tm/child/src
+CMAKE_SOURCE_DIR = /home/cona/ros_msg_example/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tm/child/build
+CMAKE_BINARY_DIR = /home/cona/ros_msg_example/build
 
 # Utility rule file for value_msg_generate_messages_py.
 
 # Include the progress variables for this target.
 include value_msg/CMakeFiles/value_msg_generate_messages_py.dir/progress.make
 
-value_msg/CMakeFiles/value_msg_generate_messages_py: /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
-value_msg/CMakeFiles/value_msg_generate_messages_py: /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py
+value_msg/CMakeFiles/value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py
 
 
-/home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py: /home/tm/child/src/value_msg/msg/value.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tm/child/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG value_msg/value"
-	cd /home/tm/child/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tm/child/src/value_msg/msg/value.msg -Ivalue_msg:/home/tm/child/src/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p value_msg -o /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py: /home/cona/ros_msg_example/src/value_msg/msg/value.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG value_msg/value"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/src/value_msg/msg/value.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
 
-/home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tm/child/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for value_msg"
-	cd /home/tm/child/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg --initpy
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG value_msg/AveragingActionResult"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG value_msg/AveragingActionFeedback"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG value_msg/AveragingAction"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG value_msg/AveragingResult"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG value_msg/AveragingActionGoal"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG value_msg/AveragingFeedback"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py: /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG value_msg/AveragingGoal"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py: /home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV value_msg/AddTwoInts"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv -Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg -Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p value_msg -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python msg __init__.py for value_msg"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg --initpy
+
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py
+/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python srv __init__.py for value_msg"
+	cd /home/cona/ros_msg_example/build/value_msg && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv --initpy
 
 value_msg_generate_messages_py: value_msg/CMakeFiles/value_msg_generate_messages_py
-value_msg_generate_messages_py: /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
-value_msg_generate_messages_py: /home/tm/child/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_value.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionResult.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionFeedback.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingAction.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingResult.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingActionGoal.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingFeedback.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/_AveragingGoal.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/_AddTwoInts.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/msg/__init__.py
+value_msg_generate_messages_py: /home/cona/ros_msg_example/devel/lib/python2.7/dist-packages/value_msg/srv/__init__.py
 value_msg_generate_messages_py: value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build.make
 
 .PHONY : value_msg_generate_messages_py
@@ -80,10 +179,10 @@ value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build: value_msg_generat
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build
 
 value_msg/CMakeFiles/value_msg_generate_messages_py.dir/clean:
-	cd /home/tm/child/build/value_msg && $(CMAKE_COMMAND) -P CMakeFiles/value_msg_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/cona/ros_msg_example/build/value_msg && $(CMAKE_COMMAND) -P CMakeFiles/value_msg_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_py.dir/clean
 
 value_msg/CMakeFiles/value_msg_generate_messages_py.dir/depend:
-	cd /home/tm/child/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tm/child/src /home/tm/child/src/value_msg /home/tm/child/build /home/tm/child/build/value_msg /home/tm/child/build/value_msg/CMakeFiles/value_msg_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cona/ros_msg_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cona/ros_msg_example/src /home/cona/ros_msg_example/src/value_msg /home/cona/ros_msg_example/build /home/cona/ros_msg_example/build/value_msg /home/cona/ros_msg_example/build/value_msg/CMakeFiles/value_msg_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_py.dir/depend
 

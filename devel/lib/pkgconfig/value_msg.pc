@@ -1,8 +1,8 @@
-prefix=/home/tm/child/devel
+prefix=/home/cona/ros_msg_example/devel
 
 Name: value_msg
 Description: Description of value_msg
 Version: 0.0.0
-Cflags: -I/home/tm/child/devel/include
+Cflags: -I/home/cona/ros_msg_example/devel/include
 Libs: -L${prefix}/lib 
-Requires: std_msgs message_generation message_runtime geometry_msgs
+Requires: std_msgs message_generation message_runtime geometry_msgs actionlib_msgs

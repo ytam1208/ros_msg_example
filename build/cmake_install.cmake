@@ -1,8 +1,8 @@
-# Install script for directory: /home/tm/child/src
+# Install script for directory: /home/cona/ros_msg_example/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tm/child/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cona/ros_msg_example/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,91 +44,91 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/_setup_util.py")
+   "/home/cona/ros_msg_example/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE PROGRAM FILES "/home/tm/child/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE PROGRAM FILES "/home/cona/ros_msg_example/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/env.sh")
+   "/home/cona/ros_msg_example/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE PROGRAM FILES "/home/tm/child/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE PROGRAM FILES "/home/cona/ros_msg_example/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/setup.bash;/home/tm/child/install/local_setup.bash")
+   "/home/cona/ros_msg_example/install/setup.bash;/home/cona/ros_msg_example/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE FILE FILES
-    "/home/tm/child/build/catkin_generated/installspace/setup.bash"
-    "/home/tm/child/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE FILE FILES
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/setup.bash"
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/setup.sh;/home/tm/child/install/local_setup.sh")
+   "/home/cona/ros_msg_example/install/setup.sh;/home/cona/ros_msg_example/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE FILE FILES
-    "/home/tm/child/build/catkin_generated/installspace/setup.sh"
-    "/home/tm/child/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE FILE FILES
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/setup.sh"
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/setup.zsh;/home/tm/child/install/local_setup.zsh")
+   "/home/cona/ros_msg_example/install/setup.zsh;/home/cona/ros_msg_example/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE FILE FILES
-    "/home/tm/child/build/catkin_generated/installspace/setup.zsh"
-    "/home/tm/child/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE FILE FILES
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/setup.zsh"
+    "/home/cona/ros_msg_example/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tm/child/install/.rosinstall")
+   "/home/cona/ros_msg_example/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tm/child/install" TYPE FILE FILES "/home/tm/child/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/cona/ros_msg_example/install" TYPE FILE FILES "/home/cona/ros_msg_example/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tm/child/build/gtest/cmake_install.cmake")
-  include("/home/tm/child/build/value_msg/cmake_install.cmake")
-  include("/home/tm/child/build/pub_msg/cmake_install.cmake")
-  include("/home/tm/child/build/sub_msg/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/gtest/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/value_msg/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/action_goal/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/action_goal_client/cmake_install.cmake")
 
 endif()
 
@@ -140,5 +140,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tm/child/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cona/ros_msg_example/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

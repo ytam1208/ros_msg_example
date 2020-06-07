@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tm/child/src
+CMAKE_SOURCE_DIR = /home/cona/ros_msg_example/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tm/child/build
+CMAKE_BINARY_DIR = /home/cona/ros_msg_example/build
 
 # Utility rule file for value_msg_geneus.
 
@@ -63,10 +63,10 @@ value_msg/CMakeFiles/value_msg_geneus.dir/build: value_msg_geneus
 .PHONY : value_msg/CMakeFiles/value_msg_geneus.dir/build
 
 value_msg/CMakeFiles/value_msg_geneus.dir/clean:
-	cd /home/tm/child/build/value_msg && $(CMAKE_COMMAND) -P CMakeFiles/value_msg_geneus.dir/cmake_clean.cmake
+	cd /home/cona/ros_msg_example/build/value_msg && $(CMAKE_COMMAND) -P CMakeFiles/value_msg_geneus.dir/cmake_clean.cmake
 .PHONY : value_msg/CMakeFiles/value_msg_geneus.dir/clean
 
 value_msg/CMakeFiles/value_msg_geneus.dir/depend:
-	cd /home/tm/child/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tm/child/src /home/tm/child/src/value_msg /home/tm/child/build /home/tm/child/build/value_msg /home/tm/child/build/value_msg/CMakeFiles/value_msg_geneus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cona/ros_msg_example/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cona/ros_msg_example/src /home/cona/ros_msg_example/src/value_msg /home/cona/ros_msg_example/build /home/cona/ros_msg_example/build/value_msg /home/cona/ros_msg_example/build/value_msg/CMakeFiles/value_msg_geneus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : value_msg/CMakeFiles/value_msg_geneus.dir/depend
 

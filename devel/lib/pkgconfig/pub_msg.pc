@@ -1,8 +1,0 @@
-prefix=/home/tm/child/devel
-
-Name: pub_msg
-Description: Description of pub_msg
-Version: 0.0.0
-Cflags: -I/home/tm/child/src/pub_msg/include
-Libs: -L${prefix}/lib -lpub_msg
-Requires: roscpp std_msgs message_generation message_runtime value_msg

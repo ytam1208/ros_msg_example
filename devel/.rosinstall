@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/tm/child/devel/setup.sh
+    local-name: /home/cona/ros_msg_example/devel/setup.sh

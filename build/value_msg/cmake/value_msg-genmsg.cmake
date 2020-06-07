@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "value_msg: 1 messages, 0 services")
+message(STATUS "value_msg: 8 messages, 1 services")
 
-set(MSG_I_FLAGS "-Ivalue_msg:/home/tm/child/src/value_msg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg;-Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,9 +17,49 @@ add_custom_target(value_msg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
 add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/tm/child/src/value_msg/msg/value.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" "value_msg/AveragingResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" "value_msg/AveragingFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" "value_msg/AveragingGoal:actionlib_msgs/GoalStatus:value_msg/AveragingActionFeedback:value_msg/AveragingResult:value_msg/AveragingActionResult:value_msg/AveragingFeedback:value_msg/AveragingActionGoal:actionlib_msgs/GoalID:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" "value_msg/AveragingGoal:actionlib_msgs/GoalID:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" ""
 )
 
 #
@@ -29,13 +69,61 @@ add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(value_msg
-  "/home/tm/child/src/value_msg/msg/value.msg"
+  "/home/cona/ros_msg_example/src/value_msg/msg/value.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
 )
 
 ### Generating Services
+_generate_srv_cpp(value_msg
+  "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
 
 ### Generating Module File
 _generate_module_cpp(value_msg
@@ -49,7 +137,23 @@ add_custom_target(value_msg_generate_messages_cpp
 add_dependencies(value_msg_generate_messages value_msg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,13 +166,61 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS value_msg_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(value_msg
-  "/home/tm/child/src/value_msg/msg/value.msg"
+  "/home/cona/ros_msg_example/src/value_msg/msg/value.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
 )
 
 ### Generating Services
+_generate_srv_eus(value_msg
+  "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
 
 ### Generating Module File
 _generate_module_eus(value_msg
@@ -82,7 +234,23 @@ add_custom_target(value_msg_generate_messages_eus
 add_dependencies(value_msg_generate_messages value_msg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,13 +263,61 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS value_msg_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(value_msg
-  "/home/tm/child/src/value_msg/msg/value.msg"
+  "/home/cona/ros_msg_example/src/value_msg/msg/value.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
 )
 
 ### Generating Services
+_generate_srv_lisp(value_msg
+  "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
 
 ### Generating Module File
 _generate_module_lisp(value_msg
@@ -115,7 +331,23 @@ add_custom_target(value_msg_generate_messages_lisp
 add_dependencies(value_msg_generate_messages value_msg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -128,13 +360,61 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS value_msg_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(value_msg
-  "/home/tm/child/src/value_msg/msg/value.msg"
+  "/home/cona/ros_msg_example/src/value_msg/msg/value.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
 )
 
 ### Generating Services
+_generate_srv_nodejs(value_msg
+  "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
 
 ### Generating Module File
 _generate_module_nodejs(value_msg
@@ -148,7 +428,23 @@ add_custom_target(value_msg_generate_messages_nodejs
 add_dependencies(value_msg_generate_messages value_msg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -161,13 +457,61 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS value_msg_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(value_msg
-  "/home/tm/child/src/value_msg/msg/value.msg"
+  "/home/cona/ros_msg_example/src/value_msg/msg/value.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
 )
 
 ### Generating Services
+_generate_srv_py(value_msg
+  "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
 
 ### Generating Module File
 _generate_module_py(value_msg
@@ -181,7 +525,23 @@ add_custom_target(value_msg_generate_messages_py
 add_dependencies(value_msg_generate_messages value_msg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/tm/child/src/value_msg/msg/value.msg" NAME_WE)
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/value.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -206,6 +566,9 @@ endif()
 if(TARGET geometry_msgs_generate_messages_cpp)
   add_dependencies(value_msg_generate_messages_cpp geometry_msgs_generate_messages_cpp)
 endif()
+if(TARGET actionlib_msgs_generate_messages_cpp)
+  add_dependencies(value_msg_generate_messages_cpp actionlib_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg)
   # install generated code
@@ -219,6 +582,9 @@ if(TARGET std_msgs_generate_messages_eus)
 endif()
 if(TARGET geometry_msgs_generate_messages_eus)
   add_dependencies(value_msg_generate_messages_eus geometry_msgs_generate_messages_eus)
+endif()
+if(TARGET actionlib_msgs_generate_messages_eus)
+  add_dependencies(value_msg_generate_messages_eus actionlib_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg)
@@ -234,6 +600,9 @@ endif()
 if(TARGET geometry_msgs_generate_messages_lisp)
   add_dependencies(value_msg_generate_messages_lisp geometry_msgs_generate_messages_lisp)
 endif()
+if(TARGET actionlib_msgs_generate_messages_lisp)
+  add_dependencies(value_msg_generate_messages_lisp actionlib_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg)
   # install generated code
@@ -247,6 +616,9 @@ if(TARGET std_msgs_generate_messages_nodejs)
 endif()
 if(TARGET geometry_msgs_generate_messages_nodejs)
   add_dependencies(value_msg_generate_messages_nodejs geometry_msgs_generate_messages_nodejs)
+endif()
+if(TARGET actionlib_msgs_generate_messages_nodejs)
+  add_dependencies(value_msg_generate_messages_nodejs actionlib_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg)
@@ -262,4 +634,7 @@ if(TARGET std_msgs_generate_messages_py)
 endif()
 if(TARGET geometry_msgs_generate_messages_py)
   add_dependencies(value_msg_generate_messages_py geometry_msgs_generate_messages_py)
+endif()
+if(TARGET actionlib_msgs_generate_messages_py)
+  add_dependencies(value_msg_generate_messages_py actionlib_msgs_generate_messages_py)
 endif()

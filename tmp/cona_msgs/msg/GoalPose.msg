@@ -1,6 +1,0 @@
-float32 target_x_mm_from_robot
-float32 target_y_mm_from_robot
-float32 target_degree_from_robot
-float32 vel_rate
-bool detour_on
-

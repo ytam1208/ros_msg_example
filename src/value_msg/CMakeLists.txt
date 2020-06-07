@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_runtime
   std_msgs
   geometry_msgs
+  actionlib_msgs
 )
 
 ## Generate messages in the 'msg' folder
@@ -17,14 +18,27 @@ add_message_files(
    value.msg
 )
 
+add_service_files(
+  DIRECTORY msg  
+  FILES
+  AddTwoInts.srv
+)
+
+add_action_files(
+  DIRECTORY msg
+  FILES
+  Averaging.action
+)
+
 generate_messages(
   DEPENDENCIES
   std_msgs
   geometry_msgs
+  actionlib_msgs
 )
 
 catkin_package(
- CATKIN_DEPENDS std_msgs message_generation message_runtime geometry_msgs
+ CATKIN_DEPENDS std_msgs message_generation message_runtime geometry_msgs actionlib_msgs
 )
 
 include_directories(

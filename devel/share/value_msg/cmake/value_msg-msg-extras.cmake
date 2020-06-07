@@ -1,2 +1,2 @@
-set(value_msg_MESSAGE_FILES "/home/tm/child/src/value_msg/msg/value.msg")
-set(value_msg_SERVICE_FILES "")
+set(value_msg_MESSAGE_FILES "/home/cona/ros_msg_example/src/value_msg/msg/value.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg")
+set(value_msg_SERVICE_FILES "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv")

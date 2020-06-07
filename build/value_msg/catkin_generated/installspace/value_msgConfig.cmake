@@ -67,14 +67,14 @@ set(value_msg_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(value_msg_SOURCE_PREFIX /home/tm/child/src/value_msg)
-  set(value_msg_DEVEL_PREFIX /home/tm/child/devel)
+  set(value_msg_SOURCE_PREFIX /home/cona/ros_msg_example/src/value_msg)
+  set(value_msg_DEVEL_PREFIX /home/cona/ros_msg_example/devel)
   set(value_msg_INSTALL_PREFIX "")
   set(value_msg_PREFIX ${value_msg_DEVEL_PREFIX})
 else()
   set(value_msg_SOURCE_PREFIX "")
   set(value_msg_DEVEL_PREFIX "")
-  set(value_msg_INSTALL_PREFIX /home/tm/child/install)
+  set(value_msg_INSTALL_PREFIX /home/cona/ros_msg_example/install)
   set(value_msg_PREFIX ${value_msg_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/tm/child/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/cona/ros_msg_example/install/lib;/home/cona/cona_msgs/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${value_msg_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "std_msgs;message_generation;message_runtime;geometry_msgs")
+set(depends "std_msgs;message_generation;message_runtime;geometry_msgs;actionlib_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

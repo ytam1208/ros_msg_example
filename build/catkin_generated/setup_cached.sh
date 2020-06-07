@@ -7,7 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/tm/child/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/tm/child/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/tm/child/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/tm/child/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/cona/ros_msg_example/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/cona/ros_msg_example/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/cona/ros_msg_example/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/cona/ros_msg_example/build"
+export PYTHONPATH="/home/cona/ros_msg_example/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/cona/ros_msg_example/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/cona/ros_msg_example/src:$ROS_PACKAGE_PATH"
