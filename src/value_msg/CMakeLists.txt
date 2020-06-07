@@ -28,6 +28,7 @@ add_action_files(
   DIRECTORY msg
   FILES
   Averaging.action
+  Fibonacci.action
 )
 
 generate_messages(

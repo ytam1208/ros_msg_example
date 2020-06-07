@@ -6,8 +6,10 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(value_msg)
-subdirs(action_goal)
+subdirs(action_client)
 subdirs(action_goal_client)
+subdirs(action_goal_server)
+subdirs(action_server)
 subdirs(pub_msg)
 subdirs(service_client)
 subdirs(service_server)

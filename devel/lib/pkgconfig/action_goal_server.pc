@@ -1,0 +1,8 @@
+prefix=/home/cona/ros_msg_example/devel
+
+Name: action_goal_server
+Description: Description of action_goal_server
+Version: 0.0.0
+Cflags: -I/home/cona/ros_msg_example/src/action_goal_server/include
+Libs: -L${prefix}/lib -laction_goal_server
+Requires: roscpp std_msgs message_generation message_runtime value_msg

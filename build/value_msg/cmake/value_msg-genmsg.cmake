@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "value_msg: 8 messages, 1 services")
+message(STATUS "value_msg: 15 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ivalue_msg:/home/cona/ros_msg_example/src/value_msg/msg;-Ivalue_msg:/home/cona/ros_msg_example/devel/share/value_msg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg")
 
@@ -27,6 +27,21 @@ add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" "value_msg/AveragingResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" "value_msg/FibonacciGoal:actionlib_msgs/GoalID:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" "actionlib_msgs/GoalID:value_msg/FibonacciActionResult:actionlib_msgs/GoalStatus:value_msg/FibonacciActionGoal:value_msg/FibonacciFeedback:value_msg/FibonacciResult:value_msg/FibonacciGoal:value_msg/FibonacciActionFeedback:std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" "value_msg/AveragingFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
@@ -40,6 +55,21 @@ add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
 add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" "value_msg/FibonacciResult:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" ""
+)
+
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:value_msg/FibonacciFeedback:actionlib_msgs/GoalStatus"
 )
 
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
@@ -62,6 +92,11 @@ add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" ""
 )
 
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
+add_custom_target(_value_msg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "value_msg" "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -78,6 +113,24 @@ _generate_msg_cpp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
 )
 _generate_msg_cpp(value_msg
@@ -99,6 +152,24 @@ _generate_msg_cpp(value_msg
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
 )
 _generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
@@ -112,6 +183,12 @@ _generate_msg_cpp(value_msg
 )
 _generate_msg_cpp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
+)
+_generate_msg_cpp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/value_msg
@@ -141,11 +218,23 @@ get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/v
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
@@ -154,6 +243,8 @@ add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_ch
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_cpp _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -178,6 +269,24 @@ _generate_msg_eus(value_msg
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
 )
 _generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
@@ -196,6 +305,24 @@ _generate_msg_eus(value_msg
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
 )
 _generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
@@ -209,6 +336,12 @@ _generate_msg_eus(value_msg
 )
 _generate_msg_eus(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
+)
+_generate_msg_eus(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/value_msg
@@ -238,11 +371,23 @@ get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/v
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
@@ -251,6 +396,8 @@ add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_ch
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_eus _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -275,6 +422,24 @@ _generate_msg_lisp(value_msg
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
 )
 _generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
@@ -293,6 +458,24 @@ _generate_msg_lisp(value_msg
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
 )
 _generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
@@ -306,6 +489,12 @@ _generate_msg_lisp(value_msg
 )
 _generate_msg_lisp(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
+)
+_generate_msg_lisp(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/value_msg
@@ -335,11 +524,23 @@ get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/v
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
@@ -348,6 +549,8 @@ add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_c
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_lisp _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -372,6 +575,24 @@ _generate_msg_nodejs(value_msg
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
 )
 _generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
@@ -390,6 +611,24 @@ _generate_msg_nodejs(value_msg
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
 )
 _generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
@@ -403,6 +642,12 @@ _generate_msg_nodejs(value_msg
 )
 _generate_msg_nodejs(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
+)
+_generate_msg_nodejs(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/value_msg
@@ -432,11 +677,23 @@ get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/v
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
@@ -445,6 +702,8 @@ add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_nodejs _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -469,6 +728,24 @@ _generate_msg_py(value_msg
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
 )
 _generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg;/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
@@ -487,6 +764,24 @@ _generate_msg_py(value_msg
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
 )
 _generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionGoal.msg"
   "${MSG_I_FLAGS}"
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
@@ -500,6 +795,12 @@ _generate_msg_py(value_msg
 )
 _generate_msg_py(value_msg
   "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
+)
+_generate_msg_py(value_msg
+  "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/value_msg
@@ -529,11 +830,23 @@ get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/v
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionResult.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingAction.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/src/value_msg/msg/AddTwoInts.srv" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
@@ -542,6 +855,8 @@ add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_che
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg" NAME_WE)
+add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg" NAME_WE)
 add_dependencies(value_msg_generate_messages_py _value_msg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -41,7 +41,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/value_msg/msg" TYPE FILE FILES "/home/cona/ros_msg_example/src/value_msg/msg/Averaging.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/value_msg/msg" TYPE FILE FILES
+    "/home/cona/ros_msg_example/src/value_msg/msg/Averaging.action"
+    "/home/cona/ros_msg_example/src/value_msg/msg/Fibonacci.action"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -53,6 +56,18 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingGoal.msg"
     "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingResult.msg"
     "/home/cona/ros_msg_example/devel/share/value_msg/msg/AveragingFeedback.msg"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/value_msg/msg" TYPE FILE FILES
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciAction.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionGoal.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionResult.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciActionFeedback.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciGoal.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciResult.msg"
+    "/home/cona/ros_msg_example/devel/share/value_msg/msg/FibonacciFeedback.msg"
     )
 endif()
 
