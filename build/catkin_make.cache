@@ -1,2 +1,2 @@
-action_goal:action_goal_client:value_msg
+action_goal:action_goal_client:pub_msg:service_client:service_server:sub_msg:value_msg
 -DCATKIN_DEVEL_PREFIX=/home/cona/ros_msg_example/devel -DCMAKE_INSTALL_PREFIX=/home/cona/ros_msg_example/install -G Unix Makefiles

@@ -457,7 +457,7 @@ value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all: value_msg/CMakeFile
 value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all: value_msg/CMakeFiles/_value_msg_generate_messages_check_deps_AveragingResult.dir/all
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_py.dir/depend
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63 "Built target value_msg_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72,73 "Built target value_msg_generate_messages_py"
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -564,7 +564,7 @@ value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all: value_msg/CMakeFil
 value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all: value_msg/CMakeFiles/_value_msg_generate_messages_check_deps_AveragingResult.dir/all
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/depend
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34 "Built target value_msg_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44 "Built target value_msg_generate_messages_eus"
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -607,7 +607,7 @@ value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all: value_msg/CMakeFi
 value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all: value_msg/CMakeFiles/_value_msg_generate_messages_check_deps_AveragingResult.dir/all
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/depend
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43 "Built target value_msg_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53 "Built target value_msg_generate_messages_lisp"
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -810,7 +810,7 @@ value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all: value_msg/CMake
 value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all: value_msg/CMakeFiles/_value_msg_generate_messages_check_deps_AveragingResult.dir/all
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/depend
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52 "Built target value_msg_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62 "Built target value_msg_generate_messages_nodejs"
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1397,7 +1397,7 @@ value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all: value_msg/CMakeFil
 value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all: value_msg/CMakeFiles/_value_msg_generate_messages_check_deps_AveragingResult.dir/all
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/depend
 	$(MAKE) -f value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/build.make value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24 "Built target value_msg_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34 "Built target value_msg_generate_messages_cpp"
 .PHONY : value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2325,6 +2325,342 @@ action_goal_client/CMakeFiles/action_goal_client.dir/clean:
 
 # clean rule for target.
 clean: action_goal_client/CMakeFiles/action_goal_client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory pub_msg
+
+# Convenience name for "all" pass in the directory.
+pub_msg/all: pub_msg/CMakeFiles/pub_msg.dir/all
+
+.PHONY : pub_msg/all
+
+# Convenience name for "clean" pass in the directory.
+pub_msg/clean: pub_msg/CMakeFiles/pub_msg.dir/clean
+
+.PHONY : pub_msg/clean
+
+# Convenience name for "preinstall" pass in the directory.
+pub_msg/preinstall:
+
+.PHONY : pub_msg/preinstall
+
+#=============================================================================
+# Target rules for target pub_msg/CMakeFiles/pub_msg.dir
+
+# All Build rule for target.
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_py.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_eus.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+pub_msg/CMakeFiles/pub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f pub_msg/CMakeFiles/pub_msg.dir/build.make pub_msg/CMakeFiles/pub_msg.dir/depend
+	$(MAKE) -f pub_msg/CMakeFiles/pub_msg.dir/build.make pub_msg/CMakeFiles/pub_msg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=16,17,18 "Built target pub_msg"
+.PHONY : pub_msg/CMakeFiles/pub_msg.dir/all
+
+# Include target in all.
+all: pub_msg/CMakeFiles/pub_msg.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+pub_msg/CMakeFiles/pub_msg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 51
+	$(MAKE) -f CMakeFiles/Makefile2 pub_msg/CMakeFiles/pub_msg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 0
+.PHONY : pub_msg/CMakeFiles/pub_msg.dir/rule
+
+# Convenience name for target.
+pub_msg: pub_msg/CMakeFiles/pub_msg.dir/rule
+
+.PHONY : pub_msg
+
+# clean rule for target.
+pub_msg/CMakeFiles/pub_msg.dir/clean:
+	$(MAKE) -f pub_msg/CMakeFiles/pub_msg.dir/build.make pub_msg/CMakeFiles/pub_msg.dir/clean
+.PHONY : pub_msg/CMakeFiles/pub_msg.dir/clean
+
+# clean rule for target.
+clean: pub_msg/CMakeFiles/pub_msg.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory service_client
+
+# Convenience name for "all" pass in the directory.
+service_client/all: service_client/CMakeFiles/service_client.dir/all
+
+.PHONY : service_client/all
+
+# Convenience name for "clean" pass in the directory.
+service_client/clean: service_client/CMakeFiles/service_client.dir/clean
+
+.PHONY : service_client/clean
+
+# Convenience name for "preinstall" pass in the directory.
+service_client/preinstall:
+
+.PHONY : service_client/preinstall
+
+#=============================================================================
+# Target rules for target service_client/CMakeFiles/service_client.dir
+
+# All Build rule for target.
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_py.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+service_client/CMakeFiles/service_client.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_eus.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+service_client/CMakeFiles/service_client.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f service_client/CMakeFiles/service_client.dir/build.make service_client/CMakeFiles/service_client.dir/depend
+	$(MAKE) -f service_client/CMakeFiles/service_client.dir/build.make service_client/CMakeFiles/service_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=19,20 "Built target service_client"
+.PHONY : service_client/CMakeFiles/service_client.dir/all
+
+# Include target in all.
+all: service_client/CMakeFiles/service_client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+service_client/CMakeFiles/service_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 service_client/CMakeFiles/service_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 0
+.PHONY : service_client/CMakeFiles/service_client.dir/rule
+
+# Convenience name for target.
+service_client: service_client/CMakeFiles/service_client.dir/rule
+
+.PHONY : service_client
+
+# clean rule for target.
+service_client/CMakeFiles/service_client.dir/clean:
+	$(MAKE) -f service_client/CMakeFiles/service_client.dir/build.make service_client/CMakeFiles/service_client.dir/clean
+.PHONY : service_client/CMakeFiles/service_client.dir/clean
+
+# clean rule for target.
+clean: service_client/CMakeFiles/service_client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory service_server
+
+# Convenience name for "all" pass in the directory.
+service_server/all: service_server/CMakeFiles/service_server.dir/all
+
+.PHONY : service_server/all
+
+# Convenience name for "clean" pass in the directory.
+service_server/clean: service_server/CMakeFiles/service_server.dir/clean
+
+.PHONY : service_server/clean
+
+# Convenience name for "preinstall" pass in the directory.
+service_server/preinstall:
+
+.PHONY : service_server/preinstall
+
+#=============================================================================
+# Target rules for target service_server/CMakeFiles/service_server.dir
+
+# All Build rule for target.
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_py.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+service_server/CMakeFiles/service_server.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_eus.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+service_server/CMakeFiles/service_server.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f service_server/CMakeFiles/service_server.dir/build.make service_server/CMakeFiles/service_server.dir/depend
+	$(MAKE) -f service_server/CMakeFiles/service_server.dir/build.make service_server/CMakeFiles/service_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=21,22 "Built target service_server"
+.PHONY : service_server/CMakeFiles/service_server.dir/all
+
+# Include target in all.
+all: service_server/CMakeFiles/service_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+service_server/CMakeFiles/service_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 service_server/CMakeFiles/service_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 0
+.PHONY : service_server/CMakeFiles/service_server.dir/rule
+
+# Convenience name for target.
+service_server: service_server/CMakeFiles/service_server.dir/rule
+
+.PHONY : service_server
+
+# clean rule for target.
+service_server/CMakeFiles/service_server.dir/clean:
+	$(MAKE) -f service_server/CMakeFiles/service_server.dir/build.make service_server/CMakeFiles/service_server.dir/clean
+.PHONY : service_server/CMakeFiles/service_server.dir/clean
+
+# clean rule for target.
+clean: service_server/CMakeFiles/service_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory sub_msg
+
+# Convenience name for "all" pass in the directory.
+sub_msg/all: sub_msg/CMakeFiles/sub_msg.dir/all
+
+.PHONY : sub_msg/all
+
+# Convenience name for "clean" pass in the directory.
+sub_msg/clean: sub_msg/CMakeFiles/sub_msg.dir/clean
+
+.PHONY : sub_msg/clean
+
+# Convenience name for "preinstall" pass in the directory.
+sub_msg/preinstall:
+
+.PHONY : sub_msg/preinstall
+
+#=============================================================================
+# Target rules for target sub_msg/CMakeFiles/sub_msg.dir
+
+# All Build rule for target.
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_py.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_py.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/value_msg_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: value_msg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_eus.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+sub_msg/CMakeFiles/sub_msg.dir/all: action_goal/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f sub_msg/CMakeFiles/sub_msg.dir/build.make sub_msg/CMakeFiles/sub_msg.dir/depend
+	$(MAKE) -f sub_msg/CMakeFiles/sub_msg.dir/build.make sub_msg/CMakeFiles/sub_msg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/ros_msg_example/build/CMakeFiles --progress-num=23,24,25 "Built target sub_msg"
+.PHONY : sub_msg/CMakeFiles/sub_msg.dir/all
+
+# Include target in all.
+all: sub_msg/CMakeFiles/sub_msg.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sub_msg/CMakeFiles/sub_msg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 51
+	$(MAKE) -f CMakeFiles/Makefile2 sub_msg/CMakeFiles/sub_msg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/ros_msg_example/build/CMakeFiles 0
+.PHONY : sub_msg/CMakeFiles/sub_msg.dir/rule
+
+# Convenience name for target.
+sub_msg: sub_msg/CMakeFiles/sub_msg.dir/rule
+
+.PHONY : sub_msg
+
+# clean rule for target.
+sub_msg/CMakeFiles/sub_msg.dir/clean:
+	$(MAKE) -f sub_msg/CMakeFiles/sub_msg.dir/build.make sub_msg/CMakeFiles/sub_msg.dir/clean
+.PHONY : sub_msg/CMakeFiles/sub_msg.dir/clean
+
+# clean rule for target.
+clean: sub_msg/CMakeFiles/sub_msg.dir/clean
 
 .PHONY : clean
 

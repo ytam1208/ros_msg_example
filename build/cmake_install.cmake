@@ -129,6 +129,10 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/cona/ros_msg_example/build/value_msg/cmake_install.cmake")
   include("/home/cona/ros_msg_example/build/action_goal/cmake_install.cmake")
   include("/home/cona/ros_msg_example/build/action_goal_client/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/pub_msg/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/service_client/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/service_server/cmake_install.cmake")
+  include("/home/cona/ros_msg_example/build/sub_msg/cmake_install.cmake")
 
 endif()
 

@@ -971,6 +971,58 @@ action_goal_client/fast:
 	$(MAKE) -f action_goal_client/CMakeFiles/action_goal_client.dir/build.make action_goal_client/CMakeFiles/action_goal_client.dir/build
 .PHONY : action_goal_client/fast
 
+#=============================================================================
+# Target rules for targets named pub_msg
+
+# Build rule for target.
+pub_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pub_msg
+.PHONY : pub_msg
+
+# fast build rule for target.
+pub_msg/fast:
+	$(MAKE) -f pub_msg/CMakeFiles/pub_msg.dir/build.make pub_msg/CMakeFiles/pub_msg.dir/build
+.PHONY : pub_msg/fast
+
+#=============================================================================
+# Target rules for targets named service_client
+
+# Build rule for target.
+service_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_client
+.PHONY : service_client
+
+# fast build rule for target.
+service_client/fast:
+	$(MAKE) -f service_client/CMakeFiles/service_client.dir/build.make service_client/CMakeFiles/service_client.dir/build
+.PHONY : service_client/fast
+
+#=============================================================================
+# Target rules for targets named service_server
+
+# Build rule for target.
+service_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 service_server
+.PHONY : service_server
+
+# fast build rule for target.
+service_server/fast:
+	$(MAKE) -f service_server/CMakeFiles/service_server.dir/build.make service_server/CMakeFiles/service_server.dir/build
+.PHONY : service_server/fast
+
+#=============================================================================
+# Target rules for targets named sub_msg
+
+# Build rule for target.
+sub_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sub_msg
+.PHONY : sub_msg
+
+# fast build rule for target.
+sub_msg/fast:
+	$(MAKE) -f sub_msg/CMakeFiles/sub_msg.dir/build.make sub_msg/CMakeFiles/sub_msg.dir/build
+.PHONY : sub_msg/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1046,6 +1098,10 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... action_goal_client"
+	@echo "... pub_msg"
+	@echo "... service_client"
+	@echo "... service_server"
+	@echo "... sub_msg"
 .PHONY : help
 
 
