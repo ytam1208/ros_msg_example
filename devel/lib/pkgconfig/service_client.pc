@@ -1,8 +1,0 @@
-prefix=/home/cona/ros_msg_example/devel
-
-Name: service_client
-Description: Description of service_client
-Version: 0.0.0
-Cflags: -I/home/cona/ros_msg_example/src/service_client/include
-Libs: -L${prefix}/lib -lservice_client
-Requires: roscpp std_msgs message_generation message_runtime value_msg
