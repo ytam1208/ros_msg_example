@@ -1,0 +1,8 @@
+prefix=/home/tm/ros_msg_example/devel
+
+Name: action_client_tuto
+Description: Description of action_client_tuto
+Version: 0.0.0
+Cflags: -I/home/tm/ros_msg_example/src/action_client_tuto/include
+Libs: -L${prefix}/lib -laction_client_tuto
+Requires: roscpp std_msgs message_generation message_runtime value_msg

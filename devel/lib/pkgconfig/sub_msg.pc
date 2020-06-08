@@ -1,0 +1,8 @@
+prefix=/home/tm/ros_msg_example/devel
+
+Name: sub_msg
+Description: Description of sub_msg
+Version: 0.0.0
+Cflags: -I/home/tm/ros_msg_example/src/sub_msg/include
+Libs: -L${prefix}/lib -lsub_msg
+Requires: roscpp std_msgs message_generation message_runtime value_msg

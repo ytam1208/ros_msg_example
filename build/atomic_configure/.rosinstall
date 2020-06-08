@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tm/ros_msg_example/devel/setup.sh
