@@ -1,2 +1,0 @@
-action_client_tuto:action_server_tuto:pub_msg:service_client:service_server:sub_msg
--DCATKIN_DEVEL_PREFIX=/home/tm/ros_msg_example/devel -DCMAKE_INSTALL_PREFIX=/home/tm/ros_msg_example/install -G Unix Makefiles

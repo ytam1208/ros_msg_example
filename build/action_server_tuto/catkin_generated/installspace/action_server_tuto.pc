@@ -1,8 +1,0 @@
-prefix=/home/tm/ros_msg_example/install
-
-Name: action_server_tuto
-Description: Description of action_server_tuto
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -laction_server_tuto
-Requires: roscpp std_msgs message_generation message_runtime value_msg
